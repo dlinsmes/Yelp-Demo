@@ -29,7 +29,10 @@ public class JSONDemo {
             JSONObject jsonObject = new JSONObject(response.body().string().trim());       // parser
 
             System.out.println("jsonObject:");
+            System.out.println(jsonObject);
             //debug to see the keys in the jsonObject: total, region, businesses
+
+            System.out.println();
             System.out.println("total: " + jsonObject.get("total"));
             System.out.println("region: " + jsonObject.get("region"));
             System.out.println("businesses: " + jsonObject.get("businesses"));
