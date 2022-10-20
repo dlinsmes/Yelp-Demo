@@ -34,10 +34,9 @@ public class JSONDemo {
             System.out.println("businesses: " + jsonObject.get("businesses"));
             System.out.println();
 
-
+            System.out.println("region:");
             //region is an object - note the prev printout was in curly braces:
             //need to get the object stored to the key region
-            System.out.println("region:");
             JSONObject region = jsonObject.getJSONObject("region");
             System.out.println(region);
             //get the object stored to center
@@ -49,6 +48,7 @@ public class JSONDemo {
             System.out.println();
 
 
+            System.out.println("businesses");
             //businesses is an array - note the printout was contained in square brackets
             JSONArray bArray = (JSONArray)jsonObject.get("businesses");
             System.out.println("length of bArray: " + bArray.length());
@@ -56,7 +56,7 @@ public class JSONDemo {
 
             for (int i = 0; i < bArray.length(); i++) {
                 //each element of businesses is a JSONObject
-                System.out.println("obj " + i);
+                System.out.println("obj " + i + " in bArray");
                 JSONObject obj = bArray.getJSONObject(i);
                 System.out.println("JSONObject: " + obj);
 
