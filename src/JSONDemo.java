@@ -36,12 +36,16 @@ public class JSONDemo {
 
 
             //region is an object - note the prev printout was in curly braces:
+            //need to get the object stored to the key region
             System.out.println("region:");
-            //need to get the object stored to the key center
-            System.out.println( ((JSONObject)jsonObject.get("region")).get("center") );
+            JSONObject region = jsonObject.getJSONObject("region");
+            System.out.println(region);
+            //get the object stored to center
+            JSONObject center = region.getJSONObject("center");
+            System.out.println(center);
             //get latitude double value from region
             System.out.println("latitude:");
-            System.out.println( ((JSONObject)((JSONObject)jsonObject.get("region")).get("center")).getDouble("latitude") );
+            System.out.println(center.getDouble("latitude"));
             System.out.println();
 
 
