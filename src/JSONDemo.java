@@ -42,7 +42,7 @@ public class JSONDemo {
             //get the object stored to center
             JSONObject center = region.getJSONObject("center");
             System.out.println(center);
-            //get latitude double value from region
+            //get latitude double value
             System.out.println("latitude:");
             System.out.println(center.getDouble("latitude"));
             System.out.println();
