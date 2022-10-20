@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) throws JSONException {
 
-        String accessToken = null;
+        String accessToken = "";
             
         // GET /businesses/search
         OkHttpClient client2 = new OkHttpClient();

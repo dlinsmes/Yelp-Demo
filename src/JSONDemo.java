@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class JSONDemo {
     public static void main(String [] args) throws JSONException {
-        String accessToken = null;
+        String accessToken = "";
         OkHttpClient client = new OkHttpClient();
 
         String term = "Taco";                      // term
