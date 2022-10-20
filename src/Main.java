@@ -28,6 +28,8 @@ public class Main {
 
             JSONObject jsonObject = new JSONObject(response2.body().string().trim());       // parser
             JSONArray myResponse = (JSONArray)jsonObject.get("businesses");
+
+
             System.out.println(myResponse.getJSONObject(0).getString("name"));
 
 
