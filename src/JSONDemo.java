@@ -39,8 +39,8 @@ public class JSONDemo {
             System.out.println();
 
             System.out.println("total:");
-            //total is just a value that can be cast - no brackets around the prev printout
-            System.out.println((int)(jsonObject.get("total")));
+            //total is just an int value - no brackets around the prev printout
+            System.out.println((jsonObject.getInt("total")));
             System.out.println();
 
 
